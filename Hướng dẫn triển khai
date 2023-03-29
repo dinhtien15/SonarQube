@@ -2,3 +2,9 @@ Yêu cầu :
 + cụm k8s cluster
 + Jenkins server
 + sonarqube server
+
+1. Triển khai cụm K8S Cluster
+2. Triển khai Jenkins server
+3. Triển khai SonarQube server với docker compose
+Cài đặt Docker và Docker Compose 
+
