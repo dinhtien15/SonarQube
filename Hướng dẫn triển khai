@@ -8,6 +8,7 @@ Yêu cầu :
 3. Triển khai SonarQube server với docker compose
 Cài đặt Docker và Docker Compose 
 #Docker file cho SonarQube 
+
 ```
 version: "3"
 services:
