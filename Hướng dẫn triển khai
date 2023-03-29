@@ -7,4 +7,24 @@ Yêu cầu :
 2. Triển khai Jenkins server
 3. Triển khai SonarQube server với docker compose
 Cài đặt Docker và Docker Compose 
-
+#Docker file cho SonarQube 
+```
+version: "3"
+services:
+  sonarqube:
+    image: sonarqube:lts
+    ports:
+      - 9000:9000
+    networks:
+      - mynetwork
+    environment:
+      - SONAR_FORCEAUTHENTICATION=false
+  jenkins:
+    image: jenkins/jenkins:2.319.1-jdk11
+    ports:
+      - 8080:8080
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+```
